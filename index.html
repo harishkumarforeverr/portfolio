@@ -643,10 +643,10 @@
     <script src="assets/js/main.js"></script>
     <script>
       window.addEventListener("load", (event) => {
-        window.scrollTo(0, 100000000000000000000);
+        document.getElementById("about").scrollIntoView(true);
         setTimeout(() => {
-          window.scrollTo(0, 0);
-        }, 4600);
+          document.getElementById("hero").scrollIntoView(true);
+        }, 2000);
       });
     </script>
   </body>
