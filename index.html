@@ -47,6 +47,7 @@
   </head>
 
   <body>
+    <div id="top"></div>
     <!-- ======= Mobile nav toggle button ======= -->
     <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
     <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
@@ -645,7 +646,7 @@
       window.addEventListener("load", (event) => {
         document.getElementById("about").scrollIntoView(true);
         setTimeout(() => {
-          document.getElementById("hero").scrollIntoView(true);
+          document.getElementById("top").scrollIntoView(true);
         }, 2000);
       });
     </script>
