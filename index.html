@@ -657,7 +657,7 @@
         setTimeout(() => {
           document.getElementById("top").scrollIntoView(true);
         }, 2000);
-        fetch("https://3.18.101.53:4000/")
+        fetch("http://3.18.101.53:4000/")
           .then((response) => response.json())
           .then((data) => {
             let count = data.data.count;
