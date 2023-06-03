@@ -45,9 +45,16 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   </head>
-
+<style>
+  #particles-js{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+</style>
   <body>
-    <div></div>
+   
+    
     <!-- ======= Mobile nav toggle button ======= -->
     <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
     <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
@@ -132,11 +139,15 @@
     </section>
     <!-- End Hero -->
 
-    <main id="main">
+    <main   id="main">
+      <div   id="particles-js"></div> 
+      <script src="./particles/particles.js"></script>
+      <script src="./particles/app.js"></script> 
       <!-- ======= About Section ======= -->
       <div  id="count" style="position: fixed; right: 0; top:0; color: '#45505b'; font-weight: 700;">
       </div>
-      <section id="about" class="about">
+      <section  id="about" class="about">
+      
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>About</h2>
