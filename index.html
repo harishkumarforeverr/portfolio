@@ -54,6 +54,11 @@
     }
   </style>
   <body>
+    <!-- <h1>edqftwertwe</h1> -->
+    <audio id="background-music" autoplay loop>
+      <source src="music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
     <!-- ======= Mobile nav toggle button ======= -->
     <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
     <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
@@ -666,10 +671,6 @@
       </div>
     </footer>
     <!-- End Footer -->
-    <audio id="background-music" autoplay loop>
-      <source src="music.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
 
     <style>
       #background-music {
@@ -678,7 +679,7 @@
     </style>
 
     <script>
-      window.addEventListener("DOMContentLoaded", function () {
+      window.addEventListener("load", function () {
         var audio = document.getElementById("background-music");
         audio.volume = 1.0; // Adjust the volume (0.0 to 1.0)
 
