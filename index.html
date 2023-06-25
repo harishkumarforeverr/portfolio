@@ -45,17 +45,15 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   </head>
-<style>
-  #particles-js{
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-}
-</style>
+  <style>
+    #particles-js {
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
   <body>
-   
-    
     <!-- ======= Mobile nav toggle button ======= -->
     <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
     <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
@@ -98,7 +96,7 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex flex-column justify-content-center">
       <div class="container" data-aos="zoom-in" data-aos-delay="100">
-        <h1>harishkumarforever  </h1>
+        <h1>harishkumarforever</h1>
         <p>
           Interseted in :
           <span
@@ -129,26 +127,42 @@
             class="linkedin"
             ><i class="bx bxl-linkedin"></i
           ></a>
-          <a href="https://leetcode.com/harishkumarforever/" class="linkedin"
+          <a href="https://leetcode.com/harishkumarforever/" class="linkedin">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
             >
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m7.375 16.781l1.25-1.562L4.601 12l4.024-3.219l-1.25-1.562l-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562l-1.25 1.562L19.399 12l-4.024 3.219l1.25 1.562l5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003l-4 18l-1.953-.434l4-18z"/></svg>
+              <path
+                fill="currentColor"
+                d="m7.375 16.781l1.25-1.562L4.601 12l4.024-3.219l-1.25-1.562l-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562l-1.25 1.562L19.399 12l-4.024 3.219l1.25 1.562l5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003l-4 18l-1.953-.434l4-18z"
+              />
+            </svg>
             <!-- <i class="bx bxl-code-alt"></i
           > -->
-        </a>
+          </a>
         </div>
       </div>
     </section>
     <!-- End Hero -->
 
-    <main   id="main">
-      <div   id="particles-js"></div> 
+    <main id="main">
+      <div id="particles-js"></div>
       <script src="./particles/particles.js"></script>
-      <script src="./particles/app.js"></script> 
+      <script src="./particles/app.js"></script>
       <!-- ======= About Section ======= -->
-      <div  id="count" style="position: fixed; right: 0; top:0; color: '#45505b'; font-weight: 700;">
-      </div>
-      <section  id="about" class="about">
-      
+      <div
+        id="count"
+        style="
+          position: fixed;
+          right: 0;
+          top: 0;
+          color: '#45505b';
+          font-weight: 700;
+        "
+      ></div>
+      <section id="about" class="about">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>About</h2>
@@ -634,15 +648,49 @@
             class="linkedin"
             ><i class="bx bxl-linkedin"></i
           ></a>
-          <a href="https://leetcode.com/harishkumarforever/" class="linkedin"
+          <a href="https://leetcode.com/harishkumarforever/" class="linkedin">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
             >
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m7.375 16.781l1.25-1.562L4.601 12l4.024-3.219l-1.25-1.562l-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562l-1.25 1.562L19.399 12l-4.024 3.219l1.25 1.562l5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003l-4 18l-1.953-.434l4-18z"/></svg>
+              <path
+                fill="currentColor"
+                d="m7.375 16.781l1.25-1.562L4.601 12l4.024-3.219l-1.25-1.562l-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562l-1.25 1.562L19.399 12l-4.024 3.219l1.25 1.562l5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003l-4 18l-1.953-.434l4-18z"
+              />
+            </svg>
             <!-- <i class="bx bxl-leetcode"></i> -->
           </a>
         </div>
       </div>
     </footer>
     <!-- End Footer -->
+    <audio id="background-music" autoplay loop>
+      <source src="music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <style>
+      #background-music {
+        display: none;
+      }
+    </style>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        var audio = document.getElementById("background-music");
+        audio.volume = 1.0; // Adjust the volume (0.0 to 1.0)
+
+        // To pause/resume the music on specific events, you can use the following code:
+
+        // Pause the music
+        // audio.pause();
+
+        // Resume the music
+        audio.play();
+      });
+    </script>
 
     <div id="preloader"></div>
     <a
@@ -678,7 +726,8 @@
           .then((response) => response.json())
           .then((data) => {
             let count = data.data.count;
-            document.getElementById("count").innerHTML="visited my website : "+count
+            document.getElementById("count").innerHTML =
+              "visited my website : " + count;
             // alert("visited my website : "+count);
 
             console.log("jsonjsonjson", data);
