@@ -53,11 +53,16 @@
       height: 100vh;
     }
   </style>
-  <body>
-    <!-- <h1>edqftwertwe</h1> -->
-    <audio id="background-music" autoplay loop>
-      <source src="music.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
+  <body onclick="playAudio()">
+    <audio
+      id="audio"
+      controls=""
+      autoplay=""
+      name="media"
+      loop="loop"
+      style="opacity: 0; pointer-events: none; position: absolute; bottom: 0"
+    >
+      <source src="./mysong.mp3" type="audio/mpeg" />
     </audio>
     <!-- ======= Mobile nav toggle button ======= -->
     <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
@@ -153,7 +158,7 @@
     <!-- End Hero -->
 
     <main id="main">
-      <div id="particles-js"></div>
+      <!-- <div id="particles-js"></div> -->
       <script src="./particles/particles.js"></script>
       <script src="./particles/app.js"></script>
       <!-- ======= About Section ======= -->
@@ -672,27 +677,6 @@
     </footer>
     <!-- End Footer -->
 
-    <style>
-      #background-music {
-        display: none;
-      }
-    </style>
-
-    <script>
-      window.addEventListener("load", function () {
-        var audio = document.getElementById("background-music");
-        audio.volume = 1.0; // Adjust the volume (0.0 to 1.0)
-
-        // To pause/resume the music on specific events, you can use the following code:
-
-        // Pause the music
-        // audio.pause();
-
-        // Resume the music
-        audio.play();
-      });
-    </script>
-
     <div id="preloader"></div>
     <a
       href="#"
@@ -723,17 +707,11 @@
         setTimeout(() => {
           document.getElementById("top").scrollIntoView(true);
         }, 2000);
-        fetch("http://3.18.101.53:4000/")
-          .then((response) => response.json())
-          .then((data) => {
-            let count = data.data.count;
-            document.getElementById("count").innerHTML =
-              "visited my website : " + count;
-            // alert("visited my website : "+count);
-
-            console.log("jsonjsonjson", data);
-          });
       });
+      function playAudio() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
     </script>
   </body>
 </html>
